@@ -24,7 +24,7 @@ unlist(str_extract_all(jumin,'[0-9]{6}-[0-9]{7}'))
 str_extract_all(jumin,'[0-9]{6}-[0-9]{7}')
 
 name<-'홍길동1234,이순신5678,강감찬1012'
-nm <- unlist(str_extract_all(name, '[가-힣]{3}'))
+nm <- unlist(str_extract_all(name, '[가-힣]{3}'))wer
 num<- unlist(str_extract_all(name, '[0-9]{4}'))
 
 name_df <- data.frame(name = c(nm), number = c(num))

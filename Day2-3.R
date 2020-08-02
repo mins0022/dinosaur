@@ -31,7 +31,7 @@ name_df <- data.frame(name = c(nm), number = c(num))
 name_df
 
 mat <- matrix(1:6, ncol =2)
-a <- data.frame(mat, 7:9) 뒤에 7 , 8, 9 라는 col이 추가가 된다.
+a <- data.frame(mat, 7:9)  #뒤에 7 , 8, 9 라는 col이 추가가 된다.
 a
 
 b <- as.data.frame(mat, 7:9) #이와같이 하면 7:9는 row의 이름으로 들어가게 된다.

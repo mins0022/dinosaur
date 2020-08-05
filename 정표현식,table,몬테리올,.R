@@ -40,6 +40,7 @@ f_res <- function(EMP){
   EMP_year <- substr(EMP,1,4)
   EMP_name <- unlist(str_extract_all(EMP, '[가-힣]{2,4}'))
   EMP_sal <- unlist(str_extract_all(EMP,'[가-힣]{2,4}[0-9]{1,}'))
+  #EMP_Sal <- unlist(str_extract_all(EMP,"[0-9]"){1,}$) 맨뒤에서 첫번째로오는 숫자묶음
   EMP_sal <- unlist(str_extract_all(EMP_sal, '[0-9]{1,}'))
   EMP_df <- data.frame(year = EMP_year,
                        name = EMP_name,
@@ -94,3 +95,13 @@ f_mon <-function(n){
 }
 
 print(f_mon(10000))
+
+
+mon <- function(n){
+  a <- runif(n)
+  b <- ifelse(a<0.5,0,1)
+  cnt <- sum(b)
+  p<-cnt/n
+  return(p)
+}
+
